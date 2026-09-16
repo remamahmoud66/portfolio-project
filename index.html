@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rima Yousef | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Rima Yousef — Computer Engineer training in Full Stack development. About, skills, projects and contact.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__logo">Eng. <span>Rima</span></a>
+
+      <nav class="navbar__nav" >
+        <ul class="navbar__links">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#projects" class="navbar__link">Projects</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="top" class="hero">
+      <div class="hero__blob"></div>
+      <div class="hero__dot hero__dot--1"></div>
+      <div class="hero__dot hero__dot--2"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Hello, my name is<br><span class="hero__title-name">Rima Yousef</span></h1>
+          <p class="hero__text">
+            Computer Engineer with technical support experience, currently training in Full Stack development.
+          </p>
+          <div class="hero__buttons">
+            <a href="RimaCV.docx" class="btn btn--primary" download>Download CV</a>
+            <a href="https://www.linkedin.com/in/reema-odeh-0a33ba417/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap">
+          <img class="hero__image" src="rimayousef.jpeg" alt="Portrait of Rima Yousef">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I'm a Computer Engineering graduate from Yarmouk University with a solid foundation in
+              programming, data structures, databases, networking, and operating systems. I recently
+              worked as a Technical Support Intern at Orange Jordan, where I diagnosed network issues,
+              supported customers, and learned how to explain technical problems in simple terms.
+            </p>
+            <p>
+              I'm currently training in Full Stack development, starting with the fundamentals: semantic
+              HTML, CSS Grid and Flexbox, and responsive design — the same skills this portfolio was built
+              with, no frameworks, no shortcuts.
+            </p>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__skills-title">Skills</h3>
+            <ul class="skill-list">
+              <li class="skill-tag">HTML5</li>
+              <li class="skill-tag">CSS</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">C++</li>
+              <li class="skill-tag">SQL</li>
+              <li class="skill-tag">OOP and Data Structures</li>
+              <li class="skill-tag">Networking</li>
+              <li class="skill-tag">GitHub</li>
+              <li class="skill-tag">Active Directory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__list">
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img src="tour-gide.jpeg" alt="Screenshot of the Tour Guide website" class="project-card__image">
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Tour Guide</h3>
+              <p class="project-card__text">
+                A web-based tourism platform that lets users search and filter destinations by country,
+                city, restaurants, and events — with pricing details for each listing and a trip booking
+                form, so users can plan and reserve their trip in one place.
+              </p>
+              <a href="https://github.com/remamahmoud66/tour-gide" target="_blank" rel="noopener" class="btn btn--small">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <form class="contact__form" action="/register" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact__submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/reema-odeh-0a33ba417/" target="_blank" rel="noopener" class="footer__icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://github.com/remamahmoud66" target="_blank" rel="noopener" class="footer__icon" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:remamahmoud66@gmail.com" class="footer__icon" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <p class="footer__text">Eng. Rima Yousef &copy; 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
