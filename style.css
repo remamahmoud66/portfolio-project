@@ -4,15 +4,12 @@
   --color-ink: #1f1c1b;
   --color-muted: #68666f;
   --color-border: #e9e6dc;
-
   --color-accent: #e8a33d;
   --color-accent-dark: #c6841f;
   --color-accent-text: #8a5a0f;
   --color-accent-ink: #1c1b1f;
-
   --font-display: Georgia, serif;
   --font-body: "Segoe UI", sans-serif;
-
   --space-1: 8px;
   --space-2: 16px;
   --space-3: 24px;
@@ -20,14 +17,11 @@
   --space-5: 48px;
   --space-6: 72px;
   --space-7: 100px;
-
   --radius-sm: 8px;
   --radius-md: 18px;
   --radius-pill: 999px;
-
   --shadow-sm: 0 2px 12px rgba(28, 27, 31, 0.07);
   --shadow-md: 0 16px 34px rgba(28, 27, 31, 0.14);
-
   --transition-fast: 0.2s ease;
   --transition-medium: 0.35s ease;
 }
@@ -370,7 +364,7 @@ h1, h2, h3 {
 }
 
 .project-card:hover {
-  transform: translateY(-6px); 
+  transform: translateY(-6px);
   box-shadow: var(--shadow-md);
   border-color: var(--color-accent);
 }
@@ -421,7 +415,6 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   gap: 6px;
- 
 }
 
 .form-group label {
@@ -429,7 +422,8 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   font-family: var(--font-body);
   font-size: 15px;
   padding: 12px 14px;
@@ -449,7 +443,6 @@ h1, h2, h3 {
   outline: none;
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(232, 163, 61, 0.2);
-  
 }
 
 .contact__submit {
@@ -460,7 +453,7 @@ h1, h2, h3 {
 .footer {
   margin-top: var(--space-6);
   background-color: var(--color-accent);
-  color: var(--color-accent-ink); 
+  color: var(--color-accent-ink);
 }
 
 .footer__content {
@@ -492,9 +485,30 @@ h1, h2, h3 {
   background-color: var(--color-surface);
   color: var(--color-ink);
 }
+
 .footer__text {
   font-size: 14px;
   opacity: 0.85;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blobFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) scale(1.03);
+  }
 }
 
 @media (max-width: 900px) {
@@ -530,6 +544,7 @@ h1, h2, h3 {
     min-height: 220px;
   }
 }
+
 @media (max-width: 600px) {
   .navbar__inner {
     flex-wrap: wrap;
