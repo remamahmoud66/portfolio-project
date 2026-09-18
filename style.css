@@ -112,8 +112,7 @@ h1, h2, h3 {
     border-color var(--transition-fast);
 }
 
-.btn:hover,
-.btn:focus-visible {
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
@@ -122,8 +121,7 @@ h1, h2, h3 {
   background-color: var(--color-accent);
   color: var(--color-accent-ink);
 }
-.btn--primary:hover,
-.btn--primary:focus-visible {
+.btn--primary:hover {
   background-color: var(--color-accent-dark);
 }
 
@@ -132,8 +130,7 @@ h1, h2, h3 {
   color: var(--color-ink);
   border-color: var(--color-ink);
 }
-.btn--outline:hover,
-.btn--outline:focus-visible {
+.btn--outline:hover {
   background-color: var(--color-ink);
   color: var(--color-bg);
 }
@@ -145,8 +142,7 @@ h1, h2, h3 {
   color: var(--color-ink);
   border-color: var(--color-border);
 }
-.btn--small:hover,
-.btn--small:focus-visible {
+.btn--small:hover {
   border-color: var(--color-accent);
   color: var(--color-accent-text);
 }
@@ -199,8 +195,7 @@ h1, h2, h3 {
   background-color: var(--color-accent);
   transition: width var(--transition-fast);
 }
-.navbar__link:hover::after,
-.navbar__link:focus-visible::after {
+.navbar__link:hover::after {
   width: 100%;
 }
 
@@ -328,6 +323,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-1);
+  cursor: pointer;
 }
 
 .skill-tag {
@@ -373,9 +369,8 @@ h1, h2, h3 {
     border-color var(--transition-fast);
 }
 
-.project-card:hover,
-.project-card:focus-within {
-  transform: translateY(-6px);
+.project-card:hover {
+  transform: translateY(-6px); 
   box-shadow: var(--shadow-md);
   border-color: var(--color-accent);
 }
@@ -392,9 +387,6 @@ h1, h2, h3 {
   min-height: 260px;
   object-fit: cover;
   transition: transform var(--transition-medium);
-}
-.project-card:hover .project-card__image {
-  transform: scale(1.06);
 }
 
 .project-card__content {
@@ -429,6 +421,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   gap: 6px;
+ 
 }
 
 .form-group label {
@@ -436,8 +429,7 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input {
   font-family: var(--font-body);
   font-size: 15px;
   padding: 12px 14px;
@@ -453,11 +445,11 @@ h1, h2, h3 {
   min-height: 120px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus {
   outline: none;
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(232, 163, 61, 0.2);
+  
 }
 
 .contact__submit {
@@ -468,7 +460,7 @@ h1, h2, h3 {
 .footer {
   margin-top: var(--space-6);
   background-color: var(--color-accent);
-  color: var(--color-accent-ink);
+  color: var(--color-accent-ink); 
 }
 
 .footer__content {
@@ -495,36 +487,14 @@ h1, h2, h3 {
   font-size: 16px;
   transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
 }
-.footer__icon:hover,
-.footer__icon:focus-visible {
+.footer__icon:hover {
   transform: translateY(-4px);
   background-color: var(--color-surface);
   color: var(--color-ink);
 }
-
 .footer__text {
   font-size: 14px;
   opacity: 0.85;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes blobFloat {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-18px) scale(1.03);
-  }
 }
 
 @media (max-width: 900px) {
@@ -560,7 +530,6 @@ h1, h2, h3 {
     min-height: 220px;
   }
 }
-
 @media (max-width: 600px) {
   .navbar__inner {
     flex-wrap: wrap;
